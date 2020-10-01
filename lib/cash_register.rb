@@ -19,7 +19,7 @@ class CashRegister
   end
   
   def apply_discount
-    if @discount > 0 
+    if @discount != 0 
       percentage = self.discount.to_f/100
       deduction = self.total * percentage
       @total -= deduction
